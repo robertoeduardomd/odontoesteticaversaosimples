@@ -1,0 +1,177 @@
+article {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    z-index: 1;
+    position: relative;
+}
+
+section {
+
+    width: 100%;
+    z-index: 2;
+    flex-direction: column;
+    /* Alteração para coluna */
+    font-family: sans-serif;
+    border-radius: 5px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    color: #006d77;
+}
+
+
+
+section>h2 {
+    display: block;
+    text-align: center;
+    font-size: 50px;
+}
+
+/*seção: 1*/
+.servicos {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    width: 30%;
+    height: 200px;
+    padding: 20px;
+    margin: 1%;
+    background: white;
+    
+    border: 2px solid #006d77;
+    border-radius: 5%;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    overflow: hidden;
+    word-wrap: break-word;
+    text-align: center;
+    
+}
+
+.card>img {
+    width: 100px;
+    height: 100px;
+}
+
+.oculttext {
+    transition: all 0.3s linear;
+    display: none;
+
+}
+
+.card:hover {
+    background-color: #006d77;
+    color: white;
+    transition: all 0.3s linear;
+
+}
+
+.card:hover img{
+    width: 0;
+    height: 0;
+}
+
+.card:hover .cardtext {
+    display: none;
+}
+
+.card:hover .oculttext {
+    display: block;
+
+}
+
+.sobre {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    padding: 20px;
+    
+}
+
+.sobreconteudo {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    line-height: 30px;
+    flex: 50%;
+    width: 100%;
+    height: 100%;
+    
+    text-align: center;
+    flex-direction: column;
+    word-wrap: break-word;
+   font-weight: bolder;
+}
+.sobreconteudo h2{
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+.sobreimg {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+
+    flex: 50%;
+    width: 100%;
+    height: 100%;
+    
+    
+}
+.sobreimg img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    object-fit: contain;
+    float: left;
+}
+.equipe{
+    width: 100%;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.equipe .infofuncionario{
+    width: 30%;
+    height: 300px;
+    border: 2px solid #E29578;
+}
